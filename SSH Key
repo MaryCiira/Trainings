@@ -1,0 +1,61 @@
+admin1@mary:~/git-class$ git remote add origin git@github.com:MaryCiira/Trainings.git
+error: remote origin already exists.
+admin1@mary:~/git-class$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+admin1@mary:~/git-class$ ssh-keygen -t ed25519 -C "wanjiruciiramary@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/admin1/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/admin1/.ssh/id_ed25519
+Your public key has been saved in /home/admin1/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:6dp9bxKmzR3YyeyXUgszZuhmZ+hXyyboNc8cvhaX1Kk wanjiruciiramary@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|                o|
+|         .     o.|
+|        S   .=o..|
+|       .   .+E*=.|
+|        . .==*Bo*|
+|       o ..***XBo|
+|      . . *+++*B.|
++----[SHA256]-----+
+admin1@mary:~/git-class$ eval "$(ssh-agent -s)"
+Agent pid 168897
+admin1@mary:~/git-class$ ls
+Assignment  code  test.txt
+admin1@mary:~/git-class$ ~
+bash: /home/admin1: Is a directory
+admin1@mary:~/git-class$ --
+--: command not found
+admin1@mary:~/git-class$ ..
+..: command not found
+admin1@mary:~/git-class$ cd ..
+admin1@mary:~$ ls
+Desktop    Downloads   get-pip.py.1  Music     Public  sudo       Videos
+Documents  get-pip.py  git-class     Pictures  snap    Templates
+admin1@mary:~$ nano .ssh
+admin1@mary:~$ cd ~/.ssh
+admin1@mary:~/.ssh$ ls
+id_ed25519  id_ed25519.pub  id_rsa  id_rsa.pub  known_hosts
+admin1@mary:~/.ssh$ cd config
+bash: cd: config: No such file or directory
+admin1@mary:~/.ssh$ nano config
+admin1@mary:~/.ssh$ nano config
+admin1@mary:~/.ssh$ ssh-add ~/.ssh/id_ed25519
+Identity added: /home/admin1/.ssh/id_ed25519 (wanjiruciiramary@gmail.com)
+admin1@mary:~/.ssh$ cd ~/.ssh
+admin1@mary:~/.ssh$ ls
+config  id_ed25519  id_ed25519.pub  id_rsa  id_rsa.pub  known_hosts
+admin1@mary:~/.ssh$ nano id_ed25519
+admin1@mary:~/.ssh$ cd id_ed25519
+bash: cd: id_ed25519: Not a directory
+admin1@mary:~/.ssh$ nano id_ed25519.pub
+admin1@mary:~/.ssh$ 
